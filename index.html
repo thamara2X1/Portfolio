@@ -1,123 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinindu Thamara | Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+<body class="dark-mode">
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
 
-<body>
-
-    <!-- Navigation Section -->
-    <nav class="navigation">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">VT</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
     </nav>
 
     <!-- Main Content -->
-    <main id="home" class="main-content">
-        <!-- Profile Section -->
-        <section class="profile-section">
-            <img src="proimg1.jpg" alt="Profile Picture" class="profile-picture">
-            <div class="profile-details">
-                <h2>Vinindu Thamara</h2>
-                <p>Full Stack developer</p>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span>👨‍💻 Software Engineer</span>
+                    </div>
+                    <h1 class="hero-title">Vinindu <span class="gradient-text">Thamara</span></h1>
+                    <p class="hero-subtitle">Undergraduate Software Engineer</p>
+                    <p class="hero-text">Crafting innovative solutions with clean code and creative thinking. Passionate about building digital experiences that make a difference.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image">
+                        <img src="proimg1.jpg" alt="Vinindu Thamara - Profile Picture" class="profile-picture">
+                        <div class="profile-image-glow"></div>
+                    </div>
+                </div>
             </div>
         </section>
-        <br>
-        <hr>
 
-        <!-- About Me Section -->
-        <section id="about" class="about-me-section">
-            <h2>About Me</h2>
-            <p>Hello there! I'm Vinindu Thamara, a full stack developer with a passion for creating innovative
-                solutions. As a dedicated
-                student, I'm always eager to learn and explore the world of coding. I believe in the power of technology
-                to bring ideas to life. Beyond coding, I love blending technology with creativity. Join me on this
-                journey where each project is a new adventure, and every line of code tells a unique story. Let's create
-                something amazing together! </p><br>
-
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                    <p class="section-subtitle">Get to know more about my journey and passion</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="about-image-container">
+                            <div class="about-image-placeholder">
+                                <img src="aboutme.jpg" alt="About me image" class="about-img">
+                            </div>
+                            <div class="about-image-border"></div>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>Hello there! I'm Vinindu Thamara</h3>
+                        <p>An Undergraduate Software Engineer with a passion for creating innovative solutions. As a dedicated student, I'm always eager to learn and explore the world of coding. I believe in the power of technology to bring ideas to life.</p>
+                        <p>Beyond coding, I love blending technology with creativity. Join me on this journey where each project is a new adventure, and every line of code tells a unique story. Let's create something amazing together!</p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-bolt"></i>
+                                <span>Fast Learner</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Problem Solver</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-users"></i>
+                                <span>Team Player</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <hr>
 
         <!-- Skills Section -->
-        <section id="skills" class="skills">
-            <h2>Skills</h2>
-            <div class="skill-icons">
-                <img src="java.png" alt="Java Icon">
-                <img src="python.png" alt="Python Icon">
-                <img src="Dart.jpeg" alt="Flutter Icon">
-                <img src="React.png" alt="Flutter Icon">
-                <img src="html.png" alt="HTML Icon">
-                <img src="css.png" alt="css Icon">
-                <img src="mysql.png" alt="Mysql Icon">
+        <section id="skills" class="section skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                    <p class="section-subtitle">Technologies I work with</p>
+                </div>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <img src="java.png" alt="Java" class="skill-img">
+                                </div>
+                                <span>Java</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <img src="python.png" alt="Python" class="skill-img">
+                                </div>
+                                <span>Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Mobile Development</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <img src="Dart.jpeg" alt="Dart/Flutter" class="skill-img">
+                                </div>
+                                <span>Flutter</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <img src="React.png" alt="React Native" class="skill-img">
+                                </div>
+                                <span>React Native</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 82%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Web Development</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <img src="html.png" alt="HTML" class="skill-img">
+                                </div>
+                                <span>HTML</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <img src="css.png" alt="CSS" class="skill-img">
+                                </div>
+                                <span>CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <span>JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Database & Backend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <img src="mysql.png" alt="MySQL" class="skill-img">
+                                </div>
+                                <span>MySQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <img src="firebase.png" alt="Firebase" class="skill-img">
+                                </div>
+                                <span>Firebase</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <img src="Mongodb.png" alt="MongoDB" class="skill-img">
+                                </div>
+                                <span>MongoDB</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <hr>
 
         <!-- Education Section -->
-        <section id="education" class="education-section">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <img src="ousl.png" alt="Open University Logo" class="education-logo">
-                    <div class="education-text">
-                        <span>Bachelor of Software Engineering Honours</span>
-                        <span class="small-text">The Open University of Sri Lanka</span>
+        <section id="education" class="section education">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Education & <span class="gradient-text">Experience</span></h2>
+                    <p class="section-subtitle">My academic journey</p>
+                </div>
+                
+                <!-- Advanced Level Education -->
+                <div class="education-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2018 - 2020</div>
+                        <div class="timeline-content">
+                            <div class="education-card">
+                                <div class="education-logo">
+                                    <img src="school.png" alt="Dharmasoka College" class="education-img">
+                                </div>
+                                <div class="education-content">
+                                    <div class="education-badge">
+                                        <span>Advanced Level</span>
+                                    </div>
+                                    <h3>Physical Science Stream</h3>
+                                    <p class="education-institution">Dharmasoka College, Ambalangoda</p>
+                                    <p class="education-details">Completed Advanced Level examination in Physical Science stream with focus on Mathematics, Physics, and Chemistry.</p>
+                                    <div class="education-features">
+                                        <span><i class="fas fa-check-circle"></i> Mathematics</span>
+                                        <span><i class="fas fa-check-circle"></i> Physics</span>
+                                        <span><i class="fas fa-check-circle"></i> Chemistry</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </li>
-            </ul>
-        </section>
-        <hr>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section">
-            <h2>Projects</h2>
-
-            <div class="project">
-                <ul>
-                    <li>Mobile Application - Cinnaro E-commerce App for selling cinnamon products: Flutter, Firebase</li>
-                    <li>Mobile Application - Expense tracker for tracks daily expenses: Java, SQLite</li>
-                    <li>Mobile Application - Booking System for Healthcare Appointment: React Native</li>
-                    <li>Tourism Web Site for travelling places in Sri Lanka: HTML, CSS, JS</li>
-                    <li>Weather Web Application for fetches real-time weather data: React.js, Node.js</li>
-                </ul>
+                    
+                    <!-- Bachelor's Degree -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">2022 - Present</div>
+                        <div class="timeline-content">
+                            <div class="education-card">
+                                <div class="education-logo">
+                                    <img src="ousl.png" alt="Open University of Sri Lanka" class="education-img">
+                                </div>
+                                <div class="education-content">
+                                    <div class="education-badge">
+                                        <span>Bachelor's Degree</span>
+                                    </div>
+                                    <h3>Bachelor of Software Engineering Honours</h3>
+                                    <p class="education-institution">The Open University of Sri Lanka</p>
+                                    <p class="education-details">Currently pursuing my degree with comprehensive coverage of modern software development concepts and technologies. The curriculum provides a solid foundation in both theoretical principles and practical applications. Some of the covered content so far includes:</p>
+                                    <div class="education-features">
+                                        <span><i class="fas fa-check-circle"></i> Software Engineering Concepts</span>
+                                        <span><i class="fas fa-check-circle"></i> Web Application</span>
+                                        <span><i class="fas fa-check-circle"></i> Cross Platform Mobile App Development</span>
+                                        <span><i class="fas fa-check-circle"></i> Python Programming</span>
+                                        <span><i class="fas fa-check-circle"></i> OOP Concepts</span>
+                                        <span><i class="fas fa-check-circle"></i> Android Development</span>
+                                        <span><i class="fas fa-check-circle"></i> Data Structures & Algorithms</span>
+                                        <span><i class="fas fa-check-circle"></i> Data Modeling & Database Systems</span>
+                                        <span><i class="fas fa-check-circle"></i> UX Engineering</span>
+                                        <span><i class="fas fa-check-circle"></i> Computer Organization and Operating Systems</span>
+                                        <span><i class="fas fa-check-circle"></i> Data Communication & Networking</span>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <hr>
 
-        <!-- Contact Information Section -->
-        <section id="contact" class="contact-section">
-            <h2>Contact Information</h2>
-            <ul>
-                <li>Email: vininduvtph@gmail.com</li>
-                <li>Phone: +94 7699 77468</li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/vinindu-thamara-3bb334265/" target="_blank">Vinindu
-                        Thamara</a>
-                </li>
-                <li>HitHub: <a href="https://github.com/thamara2X1" target="_blank">thamara2X1</a></li>
-            </ul>
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <p class="section-subtitle">Some of my recent work</p>
+                </div>
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="desktop">Desktop</button>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project cards will be dynamically generated -->
+                </div>
+                <div class="projects-slider-controls">
+                    <button class="scroll-arrow left-arrow" id="scrollLeft">&#8249;</button>
+                    <button class="scroll-arrow right-arrow" id="scrollRight">&#8250;</button>
+                </div>
+            </div>
         </section>
-        <hr>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                    <p class="section-subtitle">Let's work together</p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>vininduvtph@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>+94 7699 77468</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>LinkedIn</h3>
+                                <p><a href="https://www.linkedin.com/in/vinindu-thamara-3bb334265/" target="_blank">Vinindu Thamara</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>GitHub</h3>
+                                <p><a href="https://github.com/thamara2X1" target="_blank">thamara2X1</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2024 Vinindu Thamara</p>
-
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>VT</span>
+                </div>
+                <p class="footer-text">&copy; 2024 Vinindu Thamara. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/thamara2X1" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vinindu-thamara-3bb334265/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:vininduvtph@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
-
 </html>
