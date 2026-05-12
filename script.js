@@ -130,6 +130,13 @@ const projectsData = [
         tech: "Python / Tkinter",
         category: "desktop",
         icon: "fas fa-video"
+    },
+    {
+        title: "All-in-One POS & Business Management",
+        description: "Full-featured Windows-based Point of Sale and business management system with modules for POS, Inventory, Customers, Reports, Authentication, Sync, and Settings. Features real-time inventory tracking, customer loyalty management, multi-user roles, Google Sheets sync, and thermal receipt printing. Built with a custom Dart WebSocket barcode scanning system and a hardware-locked SHA-256 license key system. Deployed to beta clients in Sri Lanka as an offline-first packaged EXE application.",
+        tech: "Flutter / Dart / SQLite",
+        category: "desktop",
+        icon: "fas fa-cash-register"
     }
 ];
 
